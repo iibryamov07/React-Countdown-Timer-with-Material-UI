@@ -1,0 +1,222 @@
+:root {
+  --primary-color: #6a58a2;
+  --secondary-color: #ffffff;
+  --tertiary-color: #6C6A61;
+  --main-bg-color: #e0dedf;
+}
+
+
+
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  background: rgb(97,186,130);
+background: linear-gradient(90deg, rgba(97,186,130,1) 0%, rgba(54,150,146,1) 43%, rgba(84,34,147,1) 100%);
+}
+
+
+.modal{
+border: 1px solid var(--primary-color);
+border-radius: 20px;
+background-color: var(--secondary-color);
+width: 300px;
+height: 170px;
+margin-left: 40%;
+margin-top: 10%;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+
+}
+
+.modal__settings{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+}
+
+.modal__button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  height: 25px;
+  width: 25px;
+  padding: 10px;
+  color: blue;
+  background-color: var(--secondary-color);
+}
+
+.modal__button:hover{
+  transform:scale(1.2);
+  background-color: var(--primary-color);
+  color: white;
+  transition-duration: 0.7s;
+}
+
+.modal__container{
+  height: 35px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.modal__label{
+  display: flex;
+  width: 93%;
+  align-items: center;
+  justify-content: center;
+  margin-top:10px;
+  margin-bottom: 10px;
+  color: #6C6A61;
+  font-size:14px;
+}
+
+.modal__h1{
+  color: var(--tertiary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.modal__form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__input{
+  height: 20px;
+  width: 225px;
+  border-radius: 8px;
+  border-width: 0.1px;
+  border: 0.1px solid var(--primary-color);
+}
+
+.button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.timer-container{
+  width: 400px;
+  height: 350px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-bg-color);
+}
+
+
+.timer{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ width: 100%;
+}
+
+.button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.button--reset{
+  border-radius: 100%;
+  padding: 7px;
+  border-width: 0.1px;
+  border: solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.button--reset:hover{
+  transform: scale(1.1);
+  transition-duration: 0.7s;
+}
+
+.button--reset--hidden{
+  border-radius: 100%;
+  padding: 7px;
+  border-width: 0.1px;
+  border: solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  visibility: hidden;
+}
+
+.button--settings{
+  border-radius: 100%;
+  padding: 7px;
+  border-width: 0.1px;
+  border: solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.button--settings:hover{
+  transform: scale(1.1);
+  transition-duration: 0.7s;
+}
+
+.button--settings--hidden{
+  border-radius: 100%;
+  padding: 7px;
+  border-width: 0.1px;
+  border: solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  visibility: hidden;
+}
+
+.button--running{
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  padding: 7px;
+  border-width: 0.1px;
+  border: solid var(--primary-color);
+  color: white;
+}
+
+.button--running:hover{
+  background-color: var(--secondary-color);
+  color: blue;
+  transform: scale(1.1);
+  transition-duration: 0.7s;
+}
+
+.timer__label{
+  position: absolute;
+  margin-bottom: 100px;
+  color: #11cb5f;
+}
+
+.timer__progress-bar{
+  margin-bottom: 15px;
+  
+}
